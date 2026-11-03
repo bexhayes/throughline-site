@@ -58,6 +58,7 @@ figure{margin:0}
 .logo{font:500 18px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;position:relative;display:inline-block;margin-left:14px}
 .logo .line{position:absolute;left:-14px;right:-22px;top:calc(50% - 1px);height:1.5px;background:var(--accent)}
 .logo svg{position:absolute;right:-24px;top:calc(50% - 5px);overflow:visible}
+.logo svg.string{left:-14px;right:auto;width:calc(100% + 36px);height:16px;top:calc(50% - 8px)}
 
 /* Header */
 .site-header{border-bottom:1px solid var(--line)}
@@ -128,7 +129,7 @@ figure{margin:0}
 <!-- ===================== HEADER ===================== -->
 <header class="site-header">
   <div class="wrap">
-    <a href="#top" class="logo" aria-label="Throughline, home">Throughline<span class="line" aria-hidden="true"></span><svg aria-hidden="true" width="8" height="10" viewBox="0 0 8 10"><path d="M1.5 1 L6.5 5 L1.5 9" fill="none" stroke="#8FA060" stroke-width="1.5" stroke-linecap="square"/></svg></a>
+    <a href="#top" class="logo" aria-label="Throughline, home">Throughline<svg class="string" aria-hidden="true" viewBox="0 0 1000 60" preserveAspectRatio="none"><path fill="none" stroke="#8FA060" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="square" d="M0,30 Q500,30 1000,30"><animate attributeName="d" begin="0.4s" dur="0.9s" fill="freeze" calcMode="spline" keyTimes="0;0.0833;0.1667;0.2500;0.3333;0.4167;0.5000;0.5833;0.6667;0.7500;0.8333;0.9167;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" values="M0,30 Q500,54 1000,30;M0,30 Q500,9 1000,30;M0,30 Q500,48 1000,30;M0,30 Q500,15 1000,30;M0,30 Q500,42 1000,30;M0,30 Q500,20 1000,30;M0,30 Q500,38 1000,30;M0,30 Q500,24 1000,30;M0,30 Q500,34 1000,30;M0,30 Q500,27 1000,30;M0,30 Q500,32 1000,30;M0,30 Q500,29 1000,30;M0,30 Q500,30 1000,30"/></path></svg><svg aria-hidden="true" width="8" height="10" viewBox="0 0 8 10"><path d="M1.5 1 L6.5 5 L1.5 9" fill="none" stroke="#8FA060" stroke-width="1.5" stroke-linecap="square"/></svg></a>
     <nav class="nav" aria-label="Main">
       <a href="#work">What I do</a>
       <a href="#proof">Track record</a>
@@ -293,5 +294,11 @@ figure{margin:0}
   </div>
 </footer>
 
+<script>
+/* Plucked-string logo animation: skip it for visitors who prefer reduced motion */
+if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  document.querySelectorAll(".logo animate").forEach(function (a) { a.remove(); });
+}
+</script>
 </body>
 </html>
