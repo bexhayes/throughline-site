@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Throughline | Luke Roberts, commercial advisory</title>
+<meta name="description" content="Luke Roberts helps consumer brands in photography, travel and lifestyle get from launch to shelf: the right partners, clean distribution and growth across North America and international markets.">
+<meta property="og:title" content="Throughline | Luke Roberts, commercial advisory">
+<meta property="og:description" content="Getting consumer brands from launch to shelf, in the markets that matter.">
+<meta property="og:image" content="images/share.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#121211">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- =====================================================================
+     STYLES. Design lives here. Don't change this section when editing copy.
+     To change the accent colour, edit --accent below (one place only).
+     ===================================================================== -->
+<style>
+:root{
+  --accent:#8FA060;   /* Moss */
+  --ink:#121211;      /* page background */
+  --surface:#1A1A18;  /* darker bands and cards */
+  --image:#262522;    /* empty image slots */
+  --line:#2E2D2A;     /* hairlines */
+  --paper:#EDEAE3;    /* main text */
+  --body:#C9C5BC;     /* body text */
+  --muted:#9A968D;    /* small labels */
+  --head:'IBM Plex Mono',ui-monospace,monospace;
+  --mono:'DM Mono',ui-monospace,monospace;
+  --sans:'Schibsted Grotesk',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--paper)}a:hover{color:#BDB9B0}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.row{display:flex;flex-wrap:wrap;gap:48px}
+.col{flex:1 1 320px;min-width:0}
+.mono{font-family:var(--mono)}
+.label{font:400 14px/1.2 var(--mono);color:var(--accent);margin:0 0 20px}
+.h2{font:400 clamp(26px,3vw,40px)/1.18 var(--head);letter-spacing:-.025em;margin:0;max-width:760px}
+.body{font:400 17px/1.6 var(--sans);color:var(--body);margin:0}
+.btn{display:inline-block;font:500 15px/1 var(--mono);text-decoration:none;padding:18px 28px;border-radius:4px;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:var(--accent);color:var(--ink)}
+.btn-primary:hover{color:var(--ink);filter:brightness(1.08)}
+.btn-ghost{border-color:var(--paper);color:var(--paper)}
+.img{position:relative;overflow:hidden;border-radius:6px;background:var(--image)}
+.img img{width:100%;height:100%;object-fit:cover}
+.img figcaption{position:absolute;left:16px;bottom:14px;font:400 13px/1.4 var(--mono);color:#8F8B82}
+.img img+figcaption{display:none}
+figure{margin:0}
+
+/* Logo: wordmark with the through line and arrow */
+.logo{font:500 18px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;position:relative;display:inline-block;margin-left:14px}
+.logo .line{position:absolute;left:-14px;right:-22px;top:calc(50% - 1px);height:1.5px;background:var(--accent)}
+.logo svg{position:absolute;right:-24px;top:calc(50% - 5px);overflow:visible}
+
+/* Header */
+.site-header{border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:24px;padding-bottom:24px}
+.nav{display:flex;flex-wrap:wrap;gap:28px;font:400 15px/1 var(--mono)}
+.nav a{text-decoration:none;padding:12px 0}
+
+/* Hero */
+.hero{padding:96px 0 72px}
+.hero h1{font:400 clamp(30px,3.8vw,52px)/1.12 var(--head);letter-spacing:-.035em;margin:0;max-width:940px}
+.hero h1 em{color:var(--accent)}
+.hero .intro{font-size:20px;max-width:640px;margin-top:28px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px}
+.collage{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px;margin-top:72px}
+.c1{grid-column:1 / span 4;grid-row:1 / span 2;min-height:560px}
+.c2{grid-column:5 / span 8;height:300px}
+.c3{grid-column:5 / span 3;aspect-ratio:1 / 1}
+.c4{grid-column:8 / span 5}
+
+/* Brands strip */
+.brands{padding:40px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.brands .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+.brands ul{display:flex;flex-wrap:wrap;gap:40px;list-style:none;margin:0;padding:0;font:500 18px/1 var(--sans);color:#BDB9B0}
+
+/* Sections */
+.section{padding:112px 0}
+.band{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stage{border-top:2px solid var(--accent);padding-top:24px}
+.stage .num{font:400 14px/1 var(--mono);color:var(--accent);margin:0 0 16px}
+.stage h3{font:500 24px/1.2 var(--head);letter-spacing:-.02em;margin:0 0 16px}
+.stats{display:flex;flex-wrap:wrap;gap:48px;margin-top:48px}
+.stat-value{font:400 50px/1 var(--head);letter-spacing:-.04em;color:var(--accent);margin:0}
+.stat-label{font:400 14px/1.3 var(--mono);color:var(--muted);margin:8px 0 0}
+.card{background:var(--surface);border:1px solid var(--line);padding:32px;border-radius:6px}
+.card h3{font:500 21px/1.25 var(--head);letter-spacing:-.02em;margin:0 0 16px}
+
+/* Contact form */
+.form{display:flex;flex-direction:column;gap:20px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field label{font:400 14px/1 var(--mono);color:var(--body)}
+.field input,.field textarea{font:400 16px/1.4 var(--sans);padding:14px 16px;border:1px solid #3A3935;background:var(--ink);border-radius:4px;color:var(--paper)}
+.field input:focus,.field textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.hidden{position:absolute;left:-9999px}
+
+/* Footer */
+.site-footer{padding:32px 0;border-top:1px solid var(--line)}
+.site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;font:400 14px/1 var(--mono);color:var(--muted)}
+.site-footer a{color:var(--muted)}
+.site-footer .logo{font-size:14px;color:var(--muted)}
+
+/* Phone */
+@media (max-width:720px){
+  .wrap{padding:0 20px}
+  .row{gap:32px}
+  .hero{padding:64px 0 48px}
+  .section{padding:80px 0}
+  .c1{grid-column:1 / -1;grid-row:auto;min-height:420px}
+  .c2{grid-column:1 / -1;height:220px}
+  .c3{grid-column:1 / span 6}
+  .c4{grid-column:7 / span 6}
+  .nav{gap:18px;font-size:14px}
+  .site-header .wrap{padding-top:18px;padding-bottom:12px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Throughline, home">Throughline<span class="line" aria-hidden="true"></span><svg aria-hidden="true" width="8" height="10" viewBox="0 0 8 10"><path d="M1.5 1 L6.5 5 L1.5 9" fill="none" stroke="#8FA060" stroke-width="1.5" stroke-linecap="square"/></svg></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">What I do</a>
+      <a href="#proof">Track record</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== COPY: HERO ===================== -->
+<section id="top" class="hero">
+  <div class="wrap">
+    <p class="label">Luke Roberts, commercial advisory</p>
+    <h1>Getting consumer brands from launch to shelf, <em>in the markets that matter.</em></h1>
+    <p class="body intro">25 years building sales, wholesale and distribution for brands in photography, travel and lifestyle. I help founders pick the right partners, scale without losing control of price, and grow across North America and [15] international markets.</p>
+    <div class="actions">
+      <a href="#contact" class="btn btn-primary">Book an intro call</a>
+      <a href="#work" class="btn btn-ghost">How I work</a>
+    </div>
+  </div>
+  <!-- IMAGES: replace the files in /images, keep the same file names -->
+  <div class="wrap collage">
+    <figure class="img c1"><img src="images/hero-1-portrait.jpg" alt="Luke in the field" onerror="this.remove()"><figcaption>01 / Portrait: Luke in the field</figcaption></figure>
+    <figure class="img c2"><img src="images/hero-2-wide.jpg" alt="Travel landscape" onerror="this.remove()"><figcaption>02 / Wide: travel or landscape</figcaption></figure>
+    <figure class="img c3"><img src="images/hero-3-square.jpg" alt="Product detail" onerror="this.remove()"><figcaption>03 / Square: product detail</figcaption></figure>
+    <figure class="img c4"><img src="images/hero-4-landscape.jpg" alt="Trade show floor" onerror="this.remove()"><figcaption>04 / Landscape: trade show or retail floor</figcaption></figure>
+  </div>
+</section>
+
+<!-- ===================== COPY: BRANDS ===================== -->
+<section class="brands" aria-label="Brands">
+  <div class="wrap">
+    <p class="label" style="margin:0">Brands I've built with</p>
+    <ul>
+      <li>Peak Design</li>
+      <li>Rumpl</li>
+      <li>Vallerret</li>
+      <li>Oshun</li>
+      <li>[Sony]</li>
+      <li>[Leica]</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== COPY: WHAT I DO ===================== -->
+<section id="work" class="section">
+  <div class="wrap">
+    <p class="label">What I do</p>
+    <h2 class="h2">One commercial lead, from first market to full scale. Buy one stage or all three.</h2>
+    <div class="row" style="margin-top:64px">
+      <div class="col stage">
+        <p class="num">01</p>
+        <h3>Understand</h3>
+        <p class="body">Market intelligence, competitor research and category landscaping. Where the white space is, and where you'll win or won't.</p>
+      </div>
+      <div class="col stage">
+        <p class="num">02</p>
+        <h3>Enter</h3>
+        <p class="body">Choosing the right distributors and retailers, selective distribution agreements, pricing that avoids regional conflict, and e-commerce and Amazon strategy.</p>
+      </div>
+      <div class="col stage">
+        <p class="num">03</p>
+        <h3>Scale</h3>
+        <p class="body">Partner performance and gap analysis, a playbook for growing from a single pop-up to a 120-door chain, and building the sales team to run it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COPY: TRACK RECORD ===================== -->
+<section id="proof" class="section band">
+  <div class="wrap">
+    <div class="row" style="align-items:center">
+      <div class="col">
+        <p class="label">Track record</p>
+        <h2 class="h2">Peak Design: from Kickstarter to [X] markets worldwide.</h2>
+        <p class="body" style="margin-top:24px">[Luke's exact role and years.] [Two or three sentences on the challenge, what he did, and the outcome.]</p>
+        <div class="stats">
+          <div><p class="stat-value">[X]</p><p class="stat-label">markets entered</p></div>
+          <div><p class="stat-value">[X]</p><p class="stat-label">retail doors</p></div>
+          <div><p class="stat-value">[X]</p><p class="stat-label">years</p></div>
+        </div>
+      </div>
+      <div class="col">
+        <figure class="img" style="height:520px"><img src="images/case-peak-design.jpg" alt="Peak Design product in use" onerror="this.remove()"><figcaption>Brand image: Peak Design (permission needed)</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COPY: WORKING TOGETHER ===================== -->
+<section class="section">
+  <div class="wrap">
+    <p class="label">Working together</p>
+    <h2 class="h2">Start with a diagnostic. Continue only if it's useful.</h2>
+    <div class="row" style="margin-top:64px">
+      <div class="col card">
+        <h3>Diagnostic</h3>
+        <p class="body">A short, fixed-scope read on your category, channels and partners, with a plan for the next 12 months.</p>
+      </div>
+      <div class="col card">
+        <h3>Advisory</h3>
+        <p class="body">Ongoing commercial guidance, introductions and partner reviews, on a monthly basis.</p>
+      </div>
+      <div class="col card">
+        <h3>Fractional lead</h3>
+        <p class="body">Hands-on commercial leadership while you build or hire the team.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COPY: ABOUT ===================== -->
+<section id="about" class="section" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="row" style="align-items:center">
+      <div class="col">
+        <figure class="img" style="height:560px"><img src="images/about-luke.jpg" alt="Luke Roberts" onerror="this.remove()"><figcaption>Portrait: Luke, natural light</figcaption></figure>
+      </div>
+      <div class="col">
+        <p class="label">About</p>
+        <h2 class="h2">I'm Luke. I've spent 25 years on the commercial side of brands people love.</h2>
+        <p class="body" style="margin-top:24px">From photography and video to travel and lifestyle, my work has been about getting great products into the right hands: building distribution networks, opening new categories and helping young brands grow without giving away the farm.</p>
+        <p class="body" style="margin-top:16px">I'm independent, so I've no stake in which partner you choose. I'll tell you where you'll win and where you won't. [Based in Portugal, working across Europe and North America.]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COPY: CONTACT ===================== -->
+<section id="contact" class="section band">
+  <div class="wrap">
+    <div class="row">
+      <div class="col">
+        <p class="label">Contact</p>
+        <h2 class="h2">Launching, entering a new market, or stuck at scale? Let's talk.</h2>
+        <p class="body" style="margin-top:24px">Or email directly: <a href="mailto:hello@throughline-advisory.com" class="mono">hello@throughline-advisory.com</a></p>
+      </div>
+      <!-- Form is handled by Netlify Forms. Don't rename "contact" or the field names. -->
+      <form class="col form" name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="company-website">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden"><label>Leave this empty <input name="company-website"></label></p>
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="brand">Brand</label><input id="brand" name="brand" type="text"></div>
+        <div class="field"><label for="msg">What are you working on?</label><textarea id="msg" name="message" rows="4"></textarea></div>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="logo">Throughline<span class="line" aria-hidden="true" style="left:-12px;right:-18px"></span><svg aria-hidden="true" width="7" height="9" viewBox="0 0 7 9" style="right:-20px;top:calc(50% - 4.5px)"><path d="M1.5 1 L5.5 4.5 L1.5 8" fill="none" stroke="#8FA060" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+    <a href="https://www.linkedin.com/in/[luke-profile]">LinkedIn</a>
+  </div>
+</footer>
+
+</body>
+</html>
