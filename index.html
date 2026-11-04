@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Throughline | Luke Roberts, commercial advisory</title>
-<meta name="description" content="Luke Roberts helps consumer brands in photography, travel and lifestyle get from launch to shelf: the right partners, clean distribution and growth across North America and international markets.">
+<meta name="description" content="Luke Roberts helps photo, travel and lifestyle brands grow in the markets that matter: the right partners, in the right order, with the right people talking about the product. 15 years building Peak Design's global partnerships.">
 <meta property="og:title" content="Throughline | Luke Roberts, commercial advisory">
-<meta property="og:description" content="Getting consumer brands from launch to shelf, in the markets that matter.">
+<meta property="og:description" content="Revenue happens in about 15 markets. Most brands chase the wrong ones.">
 <meta property="og:image" content="images/share.jpg">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#121211">
@@ -95,6 +95,9 @@ figure{margin:0}
 .stat-label{font:400 14px/1.3 var(--mono);color:var(--muted);margin:8px 0 0}
 .card{background:var(--surface);border:1px solid var(--line);padding:32px;border-radius:6px}
 .card h3{font:500 21px/1.25 var(--head);letter-spacing:-.02em;margin:0 0 16px}
+.facts{list-style:none;margin:32px 0 0;padding:0;display:flex;flex-direction:column;gap:10px;font:400 14px/1.4 var(--mono);color:var(--body)}
+.facts li::before{content:"/ ";color:var(--accent)}
+.note{font:400 14px/1.6 var(--mono);color:var(--muted);margin:32px 0 0;max-width:640px}
 
 /* Contact form */
 .form{display:flex;flex-direction:column;gap:20px}
@@ -133,6 +136,7 @@ figure{margin:0}
     <nav class="nav" aria-label="Main">
       <a href="#work">What I do</a>
       <a href="#proof">Track record</a>
+      <a href="#clients">Clients</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -145,8 +149,8 @@ figure{margin:0}
 <section id="top" class="hero">
   <div class="wrap">
     <p class="label">Luke Roberts, commercial advisory</p>
-    <h1>Getting consumer brands from launch to shelf, <em>in the markets that matter.</em></h1>
-    <p class="body intro">25 years building sales, wholesale and distribution for brands in photography, travel and lifestyle. I help founders pick the right partners, scale without losing control of price, and grow across North America and [15] international markets.</p>
+    <h1>Revenue happens in about 15 markets. <em>Most brands chase the wrong ones.</em></h1>
+    <p class="body intro">I help photo, travel and lifestyle brands be surgical: the right markets, in the right order, with the right partners, and the right people in each market talking about the product.</p>
     <div class="actions">
       <a href="#contact" class="btn btn-primary">Book an intro call</a>
       <a href="#work" class="btn btn-ghost">How I work</a>
@@ -160,18 +164,17 @@ figure{margin:0}
   </div>
 </section>
 
-<!-- ===================== COPY: BRANDS ===================== -->
-<section class="brands" aria-label="Brands">
+<!-- ===================== COPY: INDEPENDENT CLIENTS STRIP ===================== -->
+<section class="brands" aria-label="Independent clients">
   <div class="wrap">
-    <p class="label" style="margin:0">Brands I've built with</p>
-    <!-- LOGOS: put each brand's logo file in /images/logos with the name below (SVG or PNG with a transparent background).
-         Until a file is there, the brand name shows as text instead. -->
+    <p class="label" style="margin:0">Independent work</p>
+    <!-- LOGOS: independent clients only. Put each logo in /images/logos with the name below (SVG, or PNG with a transparent background).
+         Until a file is there, the brand name shows as text instead.
+         Add Nocs Provisions only once Nicole has said yes. Peak Design work lives in the Track record section, not here. -->
     <ul>
-      <li><img src="images/logos/peak-design.svg" alt="Peak Design" style="height:54px" onerror="this.replaceWith(this.alt)"></li>
-      <li><img src="images/logos/rumpl.svg" alt="Rumpl" style="height:26px" onerror="this.replaceWith(this.alt)"></li>
-      <li><img src="images/logos/vallerret.svg" alt="Vallerret" style="height:30px" onerror="this.replaceWith(this.alt)"></li>
-      <li><img src="images/logos/oshun.svg" alt="Oshun" style="height:17px" onerror="this.replaceWith(this.alt)"></li>
-      <!-- Sony and Leica: add back once Luke's role there is confirmed -->
+      <li><img src="images/logos/vallerret.svg" alt="Vallerret" onerror="this.replaceWith(this.alt)"></li>
+      <li><img src="images/logos/vio.svg" alt="VIO" onerror="this.replaceWith(this.alt)"></li>
+      <li><img src="images/logos/oshun.svg" alt="Oshun" onerror="this.replaceWith(this.alt)"></li>
     </ul>
   </div>
 </section>
@@ -180,67 +183,145 @@ figure{margin:0}
 <section id="work" class="section">
   <div class="wrap">
     <p class="label">What I do</p>
-    <h2 class="h2">One commercial lead, from first market to full scale. Buy one stage or all three.</h2>
-    <div class="row" style="margin-top:64px">
+    <h2 class="h2">Distribution gets you on shelves. Community gets you bought.</h2>
+    <p class="body" style="margin-top:24px;max-width:680px">My core is wholesale, retail and retail development, for brands from launch to $50M across the US, Canada, Europe and APAC. Brands usually call me when they're:</p>
+    <div class="row" style="margin-top:56px">
       <div class="col stage">
         <p class="num">01</p>
-        <h3>Understand</h3>
-        <p class="body">Market intelligence, competitor research and category landscaping. Where the white space is, and where you'll win or won't.</p>
+        <h3>Scaling abroad without losing D2C</h3>
+        <p class="body">Finding partners who grow the brand in new markets without undercutting your own channel.</p>
       </div>
       <div class="col stage">
         <p class="num">02</p>
-        <h3>Enter</h3>
-        <p class="body">Choosing the right distributors and retailers, selective distribution agreements, pricing that avoids regional conflict, and e-commerce and Amazon strategy.</p>
+        <h3>Hitting channel conflict</h3>
+        <p class="body">Growing pains as you add categories: segmentation, exclusivity and market dynamics, especially in open, free-trade regions.</p>
       </div>
       <div class="col stage">
         <p class="num">03</p>
-        <h3>Scale</h3>
-        <p class="body">Partner performance and gap analysis, a playbook for growing from a single pop-up to a 120-door chain, and building the sales team to run it.</p>
+        <h3>Building retail in Asia</h3>
+        <p class="body">Pop-ups, flagships and concept stores for Western brands, done properly.</p>
+      </div>
+      <div class="col stage">
+        <p class="num">04</p>
+        <h3>Stuck with the wrong partner</h3>
+        <p class="body">An underperforming distributor or a mis-hire, and you need a way out that doesn't cost you the market.</p>
+      </div>
+      <div class="col stage">
+        <p class="num">05</p>
+        <h3>Spread too thin</h3>
+        <p class="body">Effort going into markets that don't make sense, when it should go into the few that do.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== COPY: TRACK RECORD ===================== -->
+<!-- ===================== COPY: TRACK RECORD (PEAK DESIGN) ===================== -->
 <section id="proof" class="section band">
   <div class="wrap">
     <div class="row" style="align-items:center">
       <div class="col">
-        <p class="label">Track record</p>
-        <h2 class="h2">Peak Design: from Kickstarter to [X] markets worldwide.</h2>
-        <p class="body" style="margin-top:24px">[Luke's exact role and years.] [Two or three sentences on the challenge, what he did, and the outcome.]</p>
+        <p class="label">Track record / Peak Design, 2011 to 2026</p>
+        <h2 class="h2">15 years building Peak Design's global partnerships.</h2>
+        <p class="body" style="margin-top:24px">From Sales &amp; Marketing Manager to Head of Global Partnerships &amp; Strategy. I helped take Peak Design from launch to nine-figure annual revenue, leading wholesale across APAC and EMEA.</p>
         <div class="stats">
-          <div><p class="stat-value">[X]</p><p class="stat-label">markets entered</p></div>
-          <div><p class="stat-value">[X]</p><p class="stat-label">retail doors</p></div>
-          <div><p class="stat-value">[X]</p><p class="stat-label">years</p></div>
+          <div><p class="stat-value">6,000+</p><p class="stat-label">retail doors</p></div>
+          <div><p class="stat-value">65</p><p class="stat-label">countries</p></div>
+          <div><p class="stat-value">50+</p><p class="stat-label">shop-in-shop builds</p></div>
         </div>
+        <ul class="facts">
+          <li>7 pop-ups in China</li>
+          <li>A pop-up and a flagship in Japan</li>
+          <li>A flagship in Prague</li>
+        </ul>
+        <p class="note">Partnerships led at Peak Design include Leica, Sony, Fujifilm, Panasonic, Google, Atomos and VanMoof.</p>
       </div>
       <div class="col">
-        <figure class="img" style="height:520px"><img src="images/case-peak-design.jpg" alt="Peak Design retail store in New York" onerror="this.remove()"><figcaption>Brand image: Peak Design (permission needed)</figcaption></figure>
+        <figure class="img" style="height:560px"><img src="images/case-peak-design.jpg" alt="Peak Design retail store in New York" onerror="this.remove()"><figcaption>Brand image: Peak Design (permission needed)</figcaption></figure>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== COPY: WORKING TOGETHER ===================== -->
+<!-- ===================== COPY: INDEPENDENT WORK ===================== -->
+<section id="clients" class="section">
+  <div class="wrap">
+    <p class="label">Independent work / Vallerret, 2018</p>
+    <h2 class="h2">Vallerret: 4 new partners in 6 months, in a highly seasonal market.</h2>
+    <div class="row" style="margin-top:56px">
+      <div class="col stage">
+        <p class="num">Before</p>
+        <p class="body">A specialist photography glove brand with real demand, no European photo distribution, and a short selling season to hit.</p>
+      </div>
+      <div class="col stage">
+        <p class="num">What I did</p>
+        <p class="body">Mapped the right photo distributors, opened the doors, and connected the brand to the right accounts in Asia.</p>
+      </div>
+      <div class="col stage">
+        <p class="num">After</p>
+        <p class="body">4 new partners live in 6 months, and rapid growth in a very seasonal market.</p>
+      </div>
+    </div>
+    <div class="row" style="margin-top:56px">
+      <div class="col card">
+        <h3>VIO</h3>
+        <p class="body">Consultant, 2008 to 2011. Director of European operations, then global sales, for wearable head cameras. Helped grow VIO from launch to $20M.</p>
+      </div>
+      <div class="col card">
+        <h3>Oshun</h3>
+        <p class="body">Advisor and investor, across Australia and New Zealand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COPY: WHY ME ===================== -->
+<section class="section band">
+  <div class="wrap">
+    <p class="label">Why me</p>
+    <h2 class="h2">Not a distributor. Not a big consultancy.</h2>
+    <div class="row" style="margin-top:56px">
+      <div class="col stage">
+        <h3>Brand-side, not stock-side</h3>
+        <p class="body">A distributor wants to sell more stock in its market. A big consultancy sends a deck and a junior team. I've sat on the brand side for 15+ years and negotiated with partners in 65 countries.</p>
+      </div>
+      <div class="col stage">
+        <h3>Surgical</h3>
+        <p class="body">The right shortlist of partners for your product, the right order of markets, and a clear steer on removing barriers to entry.</p>
+      </div>
+    </div>
+    <div class="row" style="margin-top:48px">
+      <div class="col stage">
+        <h3>Community, not just shelves</h3>
+        <p class="body">A global network of agencies, PR, media, KOLs and creators in photo, travel and lifestyle, so the right people in each region talk about your product the right way.</p>
+      </div>
+      <div class="col stage">
+        <h3>Full attention</h3>
+        <p class="body">Big distributors run one sales team across 20 brands. With me, it's 100% attention while your project is in flow.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COPY: WAYS TO WORK ===================== -->
 <section class="section">
   <div class="wrap">
-    <p class="label">Working together</p>
-    <h2 class="h2">Start with a diagnostic. Continue only if it's useful.</h2>
+    <p class="label">Ways to work</p>
+    <h2 class="h2">Start with a conversation. Stay as long as it's useful.</h2>
     <div class="row" style="margin-top:64px">
       <div class="col card">
-        <h3>Diagnostic</h3>
-        <p class="body">A short, fixed-scope read on your category, channels and partners, with a plan for the next 12 months.</p>
+        <h3>Session</h3>
+        <p class="body">A one-hour consult, with a read-in beforehand. A fast answer built on solid context.</p>
+      </div>
+      <div class="col card">
+        <h3>Project</h3>
+        <p class="body">A defined scope: market entry, a partner search or a channel fix.</p>
       </div>
       <div class="col card">
         <h3>Advisory</h3>
-        <p class="body">Ongoing commercial guidance, introductions and partner reviews, on a monthly basis.</p>
-      </div>
-      <div class="col card">
-        <h3>Fractional lead</h3>
-        <p class="body">Hands-on commercial leadership while you build or hire the team.</p>
+        <p class="body">Multi-year brand development, alongside your team.</p>
       </div>
     </div>
+    <p class="note">I don't do Amazon management or heavy e-commerce consulting.</p>
   </div>
 </section>
 
@@ -253,9 +334,9 @@ figure{margin:0}
       </div>
       <div class="col">
         <p class="label">About</p>
-        <h2 class="h2">I'm Luke. I've spent 25 years on the commercial side of brands people love.</h2>
-        <p class="body" style="margin-top:24px">From photography and video to travel and lifestyle, my work has been about getting great products into the right hands: building distribution networks, opening new categories and helping young brands grow without giving away the farm.</p>
-        <p class="body" style="margin-top:16px">I'm independent, so I've no stake in which partner you choose. I'll tell you where you'll win and where you won't. [Based in Portugal, working across Europe and North America.]</p>
+        <h2 class="h2">I'm Luke. I've spent 15+ years on the brand side of photo, travel and lifestyle.</h2>
+        <p class="body" style="margin-top:24px">Most recently 15 years at Peak Design, from the early days to Head of Global Partnerships &amp; Strategy. Before that, I helped VIO grow from launch to $20M. My strengths are relationships, operations and strategic advice, with an eye for brand and cultural resonance.</p>
+        <p class="body" style="margin-top:16px">I'm independent, so I've no stake in which partner you choose. I'll tell you where you'll win and where you won't. [Based in Portugal, working across the US, Canada, Europe and APAC.]</p>
       </div>
     </div>
   </div>
@@ -267,7 +348,7 @@ figure{margin:0}
     <div class="row">
       <div class="col">
         <p class="label">Contact</p>
-        <h2 class="h2">Launching, entering a new market, or stuck at scale? Let's talk.</h2>
+        <h2 class="h2">Going abroad, stuck with the wrong partner, or spread too thin? Let's talk.</h2>
         <p class="body" style="margin-top:24px">Or email directly: <a href="mailto:hello@throughline-advisory.com" class="mono">hello@throughline-advisory.com</a></p>
       </div>
       <!-- Form is handled by Netlify Forms. Don't rename "contact" or the field names. -->
