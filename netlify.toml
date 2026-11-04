@@ -1,0 +1,3 @@
+# Netlify settings: serve the site from the top folder, no build step
+[build]
+  publish = "."
