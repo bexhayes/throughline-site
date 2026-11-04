@@ -35,11 +35,11 @@ Put photos in the `images/` folder with exactly these names. JPG, roughly 2000px
 | about-luke.jpg | About section | Portrait |
 | share.jpg | Preview image when the link is shared | 1200 x 630 |
 
-Brand photos (Peak Design, Vallerret and so on) need the brand's permission before going live.
+Brand photos (Peak Design, Rumpl and so on) need the brand's permission before going live.
 
 ## Adding brand logos
 
-Put each brand's logo in `images/logos/` with these exact names: `vallerret.svg`, `vio.svg`, `oshun.svg` (and `nocs.svg` once Nicole approves). Independent clients only: Peak Design partners stay as text in the Track record section.
+Put each brand's logo in `images/logos/` with these exact names: `peak-design.svg`, `rumpl.svg`, `vallerret.svg`, `oshun.svg`.
 
 - Use the brand's official file (from their press kit, or ask them). SVG is best; a PNG with a transparent background also works, but then change `.svg` to `.png` in `index.html`.
 - Any colour is fine. The site turns every logo white automatically.
