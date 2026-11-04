@@ -28,11 +28,10 @@ Put photos in the `images/` folder with exactly these names. JPG, roughly 2000px
 
 | File name | Where it shows | Shape |
 |---|---|---|
-| hero-1-portrait.jpg | Hero, tall left image | Portrait |
-| hero-2-wide.jpg | Hero, top right | Very wide |
-| hero-3-square.jpg | Hero, small square | Square |
-| hero-4-landscape.jpg | Hero, bottom right | Landscape |
-| case-peak-design.jpg | Track record section | Portrait or square |
+| hero-1-main.jpg | Hero, big image on the left | Landscape |
+| hero-2-side.jpg | Hero, right, top | Any (cropped to fit) |
+| hero-3-square.jpg | Hero, right, bottom | Any (cropped to fit) |
+| case-peak-design.jpg | Track record section | Portrait |
 | about-luke.jpg | About section | Portrait |
 | share.jpg | Preview image when the link is shared | 1200 x 630 |
 
