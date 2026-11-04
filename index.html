@@ -80,7 +80,9 @@ figure{margin:0}
 /* Brands strip */
 .brands{padding:40px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .brands .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
-.brands ul{display:flex;flex-wrap:wrap;gap:40px;list-style:none;margin:0;padding:0;font:500 18px/1 var(--sans);color:#BDB9B0}
+.brands ul{display:flex;flex-wrap:wrap;align-items:center;gap:48px;list-style:none;margin:0;padding:0;font:500 18px/1 var(--sans);color:#BDB9B0}
+/* Logos are shown white on black automatically, whatever colour the file is */
+.brands img{display:block;height:30px;width:auto;max-width:150px;object-fit:contain;filter:brightness(0) invert(1);opacity:.92}
 
 /* Sections */
 .section{padding:112px 0}
@@ -162,13 +164,14 @@ figure{margin:0}
 <section class="brands" aria-label="Brands">
   <div class="wrap">
     <p class="label" style="margin:0">Brands I've built with</p>
+    <!-- LOGOS: put each brand's logo file in /images/logos with the name below (SVG or PNG with a transparent background).
+         Until a file is there, the brand name shows as text instead. -->
     <ul>
-      <li>Peak Design</li>
-      <li>Rumpl</li>
-      <li>Vallerret</li>
-      <li>Oshun</li>
-      <li>[Sony]</li>
-      <li>[Leica]</li>
+      <li><img src="images/logos/peak-design.svg" alt="Peak Design" onerror="this.replaceWith(this.alt)"></li>
+      <li><img src="images/logos/rumpl.svg" alt="Rumpl" onerror="this.replaceWith(this.alt)"></li>
+      <li><img src="images/logos/vallerret.svg" alt="Vallerret" onerror="this.replaceWith(this.alt)"></li>
+      <li><img src="images/logos/oshun.svg" alt="Oshun" onerror="this.replaceWith(this.alt)"></li>
+      <!-- Sony and Leica: add back once Luke's role there is confirmed -->
     </ul>
   </div>
 </section>

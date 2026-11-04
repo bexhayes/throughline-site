@@ -37,6 +37,15 @@ Put photos in the `images/` folder with exactly these names. JPG, roughly 2000px
 
 Brand photos (Peak Design, Rumpl and so on) need the brand's permission before going live.
 
+## Adding brand logos
+
+Put each brand's logo in `images/logos/` with these exact names: `peak-design.svg`, `rumpl.svg`, `vallerret.svg`, `oshun.svg`.
+
+- Use the brand's official file (from their press kit, or ask them). SVG is best; a PNG with a transparent background also works, but then change `.svg` to `.png` in `index.html`.
+- Any colour is fine. The site turns every logo white automatically.
+- Until a file is added, the brand name shows as plain text.
+- Only add brands that have said yes to being named.
+
 ## Changing the accent colour
 
 In `index.html`, find `--accent:#8FA060;` near the top and change the colour code. The logo arrow is set separately: search for `#8FA060` and change those too.
