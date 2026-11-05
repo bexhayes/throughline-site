@@ -73,9 +73,9 @@ figure{margin:0}
 .hero .intro{font-size:20px;max-width:640px;margin-top:28px}
 .hero .actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px}
 .collage{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px;margin-top:72px}
-.c1{grid-column:1 / span 8;grid-row:1 / span 2;min-height:560px}
-.c2{grid-column:9 / span 4;height:272px}
-.c3{grid-column:9 / span 4;height:272px}
+.c1{grid-column:1 / span 5;grid-row:1 / span 2;min-height:640px}
+.c2{grid-column:6 / span 7;height:312px}
+.c3{grid-column:6 / span 7;height:312px}
 
 /* Brands strip */
 .brands{padding:40px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -88,7 +88,7 @@ figure{margin:0}
 .section{padding:112px 0}
 .band{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .stage{border-top:2px solid var(--accent);padding-top:24px}
-.stage .num{font:400 14px/1 var(--mono);color:var(--accent);margin:0 0 16px}
+.stage .num{font:400 32px/1 var(--head);letter-spacing:-.03em;color:var(--accent);margin:0 0 20px}
 .stage h3{font:500 24px/1.2 var(--head);letter-spacing:-.02em;margin:0 0 16px}
 .stats{display:flex;flex-wrap:wrap;gap:48px;margin-top:48px}
 .stat-value{font:400 50px/1 var(--head);letter-spacing:-.04em;color:var(--accent);margin:0}
@@ -96,7 +96,11 @@ figure{margin:0}
 .card{background:var(--surface);border:1px solid var(--line);padding:32px;border-radius:6px}
 .note{font:400 13px/1.6 var(--mono);color:var(--muted);margin:32px 0 0}
 .triggers{list-style:none;margin:32px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.triggers li{font:400 13px/1 var(--mono);color:var(--paper);border:1px solid var(--line);border-radius:4px;padding:10px 12px}
+.triggers li{font:400 12px/1 var(--mono);color:var(--body);border:1px solid rgba(143,160,96,.45);border-radius:10px;padding:7px 12px}
+.facts{font:400 14px/1.7 var(--mono);color:var(--body);margin:36px 0 0}
+.energy{font:italic 400 clamp(34px,4.4vw,60px)/1.08 var(--head);letter-spacing:-.035em;margin:0;color:var(--accent)}
+.card-wide{margin-top:24px;text-align:center}
+.card-wide .body{max-width:560px;margin:0 auto}
 .card h3{font:500 21px/1.25 var(--head);letter-spacing:-.02em;margin:0 0 16px}
 
 /* Contact form */
@@ -157,9 +161,9 @@ figure{margin:0}
   </div>
   <!-- IMAGES: replace the files in /images, keep the same file names -->
   <div class="wrap collage">
-    <figure class="img c1"><img src="images/hero-1-main.jpg" alt="Photographer on a mountain peak above the clouds" onerror="this.remove()"><figcaption>01 / Main image</figcaption></figure>
-    <figure class="img c2"><img src="images/hero-2-side.jpg" alt="Sunset over a city waterway from a boat" onerror="this.remove()"><figcaption>02 / Side image, top</figcaption></figure>
-    <figure class="img c3"><img src="images/hero-3-square.jpg" alt="Cyclist on an open road at golden hour" onerror="this.remove()"><figcaption>03 / Side image, bottom</figcaption></figure>
+    <figure class="img c1"><img src="images/hero-1-main.jpg" alt="Traveller with a sling bag looking out over a fjord" style="object-position:50% 50%" onerror="this.remove()"><figcaption>01 / Main image</figcaption></figure>
+    <figure class="img c2"><img src="images/hero-2-side.jpg" alt="Photographer hanging from a rope on a rock face, camera in hand" style="object-position:55% 40%" onerror="this.remove()"><figcaption>02 / Side image, top</figcaption></figure>
+    <figure class="img c3"><img src="images/hero-3-square.jpg" alt="Rider checking a bike app on a phone on the handlebars" style="object-position:60% 50%" onerror="this.remove()"><figcaption>03 / Side image, bottom</figcaption></figure>
   </div>
 </section>
 
@@ -204,6 +208,22 @@ figure{margin:0}
   </div>
 </section>
 
+<!-- ===================== COPY: COMMUNITY ===================== -->
+<section class="section" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="row" style="align-items:center">
+      <div class="col">
+        <figure class="img" style="height:440px"><img src="images/community.jpg" alt="" onerror="this.remove()"><figcaption>Community photo to come</figcaption></figure>
+      </div>
+      <div class="col">
+        <p class="label">Community</p>
+        <h2 class="energy">Energy is everything.</h2>
+        <p class="body intro" style="margin-top:28px;max-width:520px">Distribution gets you on shelves. Community gets you bought. I bring the agencies, PR, media and creators who get a brand talked about, and the communities around them, built over 15 years in photo, travel and lifestyle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== COPY: TRACK RECORD ===================== -->
 <section id="proof" class="section band">
   <div class="wrap">
@@ -211,13 +231,14 @@ figure{margin:0}
       <div class="col">
         <p class="label">Track record</p>
         <h2 class="h2">Peak Design: from launch to 6,000+ doors in 65 countries.</h2>
-        <p class="body" style="margin-top:24px">15 years building Peak Design's global partnerships, from Sales &amp; Marketing Manager to Head of Global Partnerships &amp; Strategy. I led APAC and EMEA, helped grow the brand to nine-figure revenue, and opened pop-ups and flagships in China, Japan and Prague.</p>
+        <p class="body" style="margin-top:24px">15 years building Peak Design's global partnerships, from Sales &amp; Marketing Manager to Head of Global Partnerships &amp; Strategy. I led APAC and EMEA and helped grow the brand to nine-figure revenue.</p>
         <div class="stats">
           <div><p class="stat-value">65</p><p class="stat-label">countries</p></div>
           <div><p class="stat-value">6,000+</p><p class="stat-label">retail doors</p></div>
-          <div><p class="stat-value">15</p><p class="stat-label">years</p></div>
+          <div><p class="stat-value">50+</p><p class="stat-label">shop-in-shops</p></div>
         </div>
-        <p class="note">Partnerships led at Peak Design include Leica, Sony, Fujifilm, Panasonic, Google, Atomos and VanMoof.</p>
+        <p class="facts">Pop-ups and flagships in China, Japan and Prague.</p>
+        <p class="note" style="margin-top:12px">Partnerships led at Peak Design include Leica, Sony, Fujifilm, Panasonic, Google, Atomos, VanMoof and POC.</p>
       </div>
       <div class="col">
         <figure class="img" style="height:520px"><img src="images/case-peak-design.jpg" alt="Peak Design retail store in New York" onerror="this.remove()"><figcaption>Brand image: Peak Design (permission needed)</figcaption></figure>
@@ -230,8 +251,8 @@ figure{margin:0}
 <section class="section">
   <div class="wrap">
     <p class="label">Working together</p>
-    <h2 class="h2">Start with a session. Continue only if it's useful.</h2>
-    <div class="row" style="margin-top:64px">
+    <h2 class="h2">Start with an hour. Stay as long as it's useful.</h2>
+    <div class="row" style="margin-top:64px;gap:24px">
       <div class="col card">
         <h3>Session</h3>
         <p class="body">A one-hour consult, with a read-in on your brand beforehand so the hour goes on answers.</p>
@@ -240,10 +261,10 @@ figure{margin:0}
         <h3>Project</h3>
         <p class="body">A defined scope, such as entering a market, finding the right partner or fixing channel conflict.</p>
       </div>
-      <div class="col card">
-        <h3>Advisory</h3>
-        <p class="body">Long-term brand development, with commercial guidance, introductions and partner reviews.</p>
-      </div>
+    </div>
+    <div class="card card-wide">
+      <h3>Advisory</h3>
+      <p class="body">Long-term brand development, with commercial guidance, introductions and partner reviews.</p>
     </div>
   </div>
 </section>
@@ -253,13 +274,13 @@ figure{margin:0}
   <div class="wrap">
     <div class="row" style="align-items:center">
       <div class="col">
-        <figure class="img" style="height:560px"><img src="images/about-luke.jpg" alt="Luke Roberts" onerror="this.remove()"><figcaption>Portrait: Luke, natural light</figcaption></figure>
+        <figure class="img" style="height:560px"><img src="images/about-luke.jpg" alt="Luke Roberts on a beach with a camera" style="object-position:50% 30%" onerror="this.remove()"><figcaption>Portrait: Luke, natural light</figcaption></figure>
       </div>
       <div class="col">
         <p class="label">About</p>
         <h2 class="h2">I'm Luke. I've spent 20+ years on the commercial side of brands people love.</h2>
         <p class="body" style="margin-top:24px">From photography and video to travel and lifestyle, my work has been about getting great products into the right hands: building distribution networks, opening new categories and helping young brands grow without giving away the farm. Most recently 15 years at Peak Design; before that, helping VIO grow from launch to $20M.</p>
-        <p class="body" style="margin-top:16px">I'm independent, so I've no stake in which partner you choose, and you get my full attention while your project is in flow. I'll tell you where you'll win and where you won't. [Based in Portugal, working across Europe and North America.]</p>
+        <p class="body" style="margin-top:16px">I'm independent, so I've no stake in which partner you choose, and you get my full attention while your project is in flow. I'll tell you where you'll win and where you won't. Based in Portugal, working across Europe, APAC and North America.</p>
       </div>
     </div>
   </div>
@@ -301,7 +322,7 @@ figure{margin:0}
 <footer class="site-footer">
   <div class="wrap">
     <span class="logo">Throughline<span class="line" aria-hidden="true" style="left:-12px;right:-18px"></span><svg aria-hidden="true" width="7" height="9" viewBox="0 0 7 9" style="right:-20px;top:calc(50% - 4.5px)"><path d="M1.5 1 L5.5 4.5 L1.5 8" fill="none" stroke="#8FA060" stroke-width="1.5" stroke-linecap="square"/></svg></span>
-    <a href="https://www.linkedin.com/in/[luke-profile]">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/snowcam">LinkedIn</a>
   </div>
 </footer>
 
