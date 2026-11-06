@@ -65,6 +65,7 @@ figure{margin:0}
 .site-header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:24px;padding-bottom:24px}
 .nav{display:flex;flex-wrap:wrap;gap:28px;font:400 15px/1 var(--mono)}
 .nav a{text-decoration:none;padding:12px 0}
+.burger{display:none}
 
 /* Hero */
 .hero{padding:96px 0 72px}
@@ -129,14 +130,26 @@ figure{margin:0}
   .c2{grid-column:1 / span 6;grid-row:2}
   .c3{grid-column:7 / span 6;grid-row:2}
   .nav{gap:18px;font-size:14px}
-  .site-header .wrap{padding-top:18px;padding-bottom:18px;flex-wrap:nowrap}
-  .nav a:not([href="#contact"]){display:none}
-  .hero .actions .btn{flex:1 1 100%;text-align:center;justify-content:center}
-  .brands ul{display:grid;grid-template-columns:1fr 1fr;gap:32px 24px;align-items:center;justify-items:start}
-  .brands img{max-height:40px}
-  .stats{gap:24px;flex-wrap:nowrap}
-  .stat-value{font-size:34px}
-  .stat-label{font-size:13px}
+  .site-header .wrap{padding-top:18px;padding-bottom:18px;flex-wrap:wrap;gap:0}
+  .site-header .logo{font-size:20px}
+  .burger{display:flex;flex-direction:column;justify-content:center;gap:6px;width:44px;height:44px;margin-right:-10px;padding:10px;background:none;border:0;cursor:pointer}
+  .burger span{display:block;height:1.5px;background:var(--paper);transition:transform .2s}
+  .burger[aria-expanded="true"] span:first-child{transform:translateY(3.75px) rotate(45deg)}
+  .burger[aria-expanded="true"] span:last-child{transform:translateY(-3.75px) rotate(-45deg)}
+  .nav{display:none;flex-basis:100%;flex-direction:column;gap:0;font-size:16px;margin-top:12px;border-top:1px solid var(--line)}
+  .nav.open{display:flex}
+  .nav a{padding:16px 0;border-bottom:1px solid var(--line)}
+  .nav a:last-child{border-bottom:0}
+  .hero .actions{flex-wrap:nowrap;gap:10px}
+  .hero .actions .btn{flex:1 1 0;text-align:center;font-size:13px;padding:14px 8px;white-space:nowrap}
+  .brands ul{display:grid;grid-template-columns:1fr 1fr;gap:28px 24px;align-items:center;justify-items:center;width:100%}
+  .brands li{height:52px;width:120px;display:flex;align-items:center;justify-content:center;font-size:22px;letter-spacing:.04em;color:var(--paper)}
+  .brands img{height:auto !important;width:110px;max-width:110px;max-height:52px}
+  .brands img[alt="Peak Design"]{max-height:42px}
+  .brands img[alt="Vallerret"]{width:120px;max-width:120px}
+  .stats{gap:20px;flex-wrap:nowrap;margin-top:36px}
+  .stat-value{font-size:28px}
+  .stat-label{font-size:12px}
   .section .img[style*="height"]{height:340px !important}
   #about .img[style*="height"]{height:420px !important}
   #contact .body a.mono{display:block;margin-top:6px}
@@ -150,7 +163,8 @@ figure{margin:0}
 <header class="site-header">
   <div class="wrap">
     <a href="#top" class="logo" aria-label="Throughline, home">Throughline<svg class="string" aria-hidden="true" viewBox="0 0 1000 60" preserveAspectRatio="none"><path fill="none" stroke="#8FA060" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="square" d="M0,30 Q500,30 1000,30"><animate attributeName="d" begin="0.4s" dur="0.9s" fill="freeze" calcMode="spline" keyTimes="0;0.0833;0.1667;0.2500;0.3333;0.4167;0.5000;0.5833;0.6667;0.7500;0.8333;0.9167;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" values="M0,30 Q500,54 1000,30;M0,30 Q500,9 1000,30;M0,30 Q500,48 1000,30;M0,30 Q500,15 1000,30;M0,30 Q500,42 1000,30;M0,30 Q500,20 1000,30;M0,30 Q500,38 1000,30;M0,30 Q500,24 1000,30;M0,30 Q500,34 1000,30;M0,30 Q500,27 1000,30;M0,30 Q500,32 1000,30;M0,30 Q500,29 1000,30;M0,30 Q500,30 1000,30"/></path></svg><svg aria-hidden="true" width="8" height="10" viewBox="0 0 8 10"><path d="M1.5 1 L6.5 5 L1.5 9" fill="none" stroke="#8FA060" stroke-width="1.5" stroke-linecap="square"/></svg></a>
-    <nav class="nav" aria-label="Main">
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav class="nav" id="main-nav" aria-label="Main">
       <a href="#work">What I do</a>
       <a href="#proof">Track record</a>
       <a href="#about">About</a>
@@ -334,6 +348,10 @@ figure{margin:0}
 </footer>
 
 <script>
+/* Mobile menu */
+(function(){var b=document.querySelector(".burger"),n=document.getElementById("main-nav");if(!b||!n)return;
+b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false")});
+n.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open");b.setAttribute("aria-expanded","false")})});})();
 /* Plucked-string logo animation: skip it for visitors who prefer reduced motion */
 if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   document.querySelectorAll(".logo animate").forEach(function (a) { a.remove(); });
