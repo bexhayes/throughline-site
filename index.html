@@ -129,7 +129,18 @@ figure{margin:0}
   .c2{grid-column:1 / span 6;grid-row:2}
   .c3{grid-column:7 / span 6;grid-row:2}
   .nav{gap:18px;font-size:14px}
-  .site-header .wrap{padding-top:18px;padding-bottom:12px}
+  .site-header .wrap{padding-top:18px;padding-bottom:18px;flex-wrap:nowrap}
+  .nav a:not([href="#contact"]){display:none}
+  .hero .actions .btn{flex:1 1 100%;text-align:center;justify-content:center}
+  .brands ul{display:grid;grid-template-columns:1fr 1fr;gap:32px 24px;align-items:center;justify-items:start}
+  .brands img{max-height:40px}
+  .stats{gap:24px;flex-wrap:nowrap}
+  .stat-value{font-size:34px}
+  .stat-label{font-size:13px}
+  .section .img[style*="height"]{height:340px !important}
+  #about .img[style*="height"]{height:420px !important}
+  #contact .body a.mono{display:block;margin-top:6px}
+  .form button[type="submit"]{align-self:stretch !important}
 }
 </style>
 </head>
