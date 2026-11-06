@@ -136,7 +136,8 @@ figure{margin:0}
   .burger span{display:block;height:1.5px;background:var(--paper);transition:transform .2s}
   .burger[aria-expanded="true"] span:first-child{transform:translateY(3.75px) rotate(45deg)}
   .burger[aria-expanded="true"] span:last-child{transform:translateY(-3.75px) rotate(-45deg)}
-  .nav{display:none;flex-basis:100%;flex-direction:column;gap:0;font-size:16px;margin-top:12px;border-top:1px solid var(--line)}
+  .site-header{position:relative;z-index:20}
+  .nav{display:none;position:absolute;top:calc(100% + 1px);left:0;right:0;flex-direction:column;gap:0;font-size:16px;padding:0 20px;background:var(--ink);border-bottom:1px solid var(--line)}
   .nav.open{display:flex}
   .nav a{padding:16px 0;border-bottom:1px solid var(--line)}
   .nav a:last-child{border-bottom:0}
