@@ -103,6 +103,11 @@ figure{margin:0}
 .credit{font:400 12px/1 var(--mono);color:var(--muted);margin:12px 0 0}
 .energy{font:italic 400 clamp(34px,4.4vw,60px)/1.08 var(--head);letter-spacing:-.035em;margin:0;color:var(--accent)}
 .card-wide{margin-top:24px}
+.quotes{display:flex;flex-wrap:wrap;gap:48px;margin-top:56px}
+.quote{flex:1 1 320px;min-width:0;margin:0;padding-top:28px;border-top:1px solid var(--accent)}
+.quote p{font:400 clamp(19px,1.7vw,23px)/1.45 var(--head);letter-spacing:-.02em;color:var(--paper);margin:0}
+.quote footer{margin-top:28px;font:400 14px/1.5 var(--mono);color:var(--muted)}
+.quote footer strong{display:block;font-weight:400;color:var(--paper)}
 .card h3{font:500 21px/1.25 var(--head);letter-spacing:-.02em;margin:0 0 16px}
 
 /* Contact form */
@@ -276,8 +281,26 @@ figure{margin:0}
   </div>
 </section>
 
-<!-- ===================== COPY: WORKING TOGETHER ===================== -->
+<!-- ===================== COPY: QUOTES ===================== -->
 <section class="section">
+  <div class="wrap">
+    <p class="label">What people say</p>
+    <h2 class="h2">From the people who built Peak Design with him.</h2>
+    <div class="quotes">
+      <blockquote class="quote">
+        <p>&ldquo;Luke is, quite simply, one of the most naturally gifted relationship builders I've ever met&hellip; He has an uncanny ability to make people excited about a brand, and more importantly, to make them feel personally invested in its success.&rdquo;</p>
+        <footer><strong>Peter Dering</strong>Founder &amp; CEO, Peak Design</footer>
+      </blockquote>
+      <blockquote class="quote">
+        <p>&ldquo;Luke has a rare instinct for which markets and partners to back, and in what order&hellip; Partners and colleagues trust him because he's straight with them and follows through.&rdquo;</p>
+        <footer><strong>David Anhalt</strong>CFO, Peak Design</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COPY: WORKING TOGETHER ===================== -->
+<section class="section" style="border-top:1px solid var(--line)">
   <div class="wrap">
     <p class="label">Working together</p>
     <h2 class="h2">Start with an hour. Stay as long as it's useful.</h2>
